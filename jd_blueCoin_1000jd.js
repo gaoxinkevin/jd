@@ -125,7 +125,8 @@ async function PrizeIndex() {
         return ;
       }
       //兑换1000京豆
-      if ($.totalBlue > $.blueCost) {
+      // if ($.totalBlue > $.blueCost) {
+      if (true) {
         await smtg_obtainPrize(prizeList[0].prizeId);
       } else {
         console.log(`兑换失败,您目前蓝币${$.totalBlue}个,不足以兑换${$.title}所需的${$.blueCost}个`);
